@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+
+  <script>
+    // Incorrect way to access an element that might not exist.
+    // Should use optional chaining or check existence first.
+    myDiv.innerHTML = "Text added to div"; 
+  </script>
+</body>
+</html>
