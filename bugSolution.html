@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error Solution</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+
+  <script>
+    // Correct ways to access an element and handle potential errors:
+    const myDiv = document.getElementById('myDiv');
+
+    // Method 1: Check for null
+    if (myDiv) {
+      myDiv.innerHTML = "Text added to div";
+    } else {
+      console.error("Element with id 'myDiv' not found.");
+    }
+
+    // Method 2: Optional chaining (more modern and concise)
+    myDiv?.innerHTML = "Text added to div";
+  </script>
+</body>
+</html>
